@@ -125,13 +125,13 @@ MongoClient.connect(connectionURL, { useNewUrlParser: true }, (error, client) =>
     //         });
 
 
-    db.collection('tasks').deleteOne({
-        completed: false
-    }).then((result) => {
-        console.log(result)
-    }).catch((error) => {
-        console.log(error);
-    });
+    // db.collection('tasks').deleteOne({
+    //     completed: false
+    // }).then((result) => {
+    //     console.log(result)
+    // }).catch((error) => {
+    //     console.log(error);
+    // });
 
     // db.collection('users').deleteMany({
     //     name: 'Adi'
