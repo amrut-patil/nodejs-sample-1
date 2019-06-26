@@ -36,7 +36,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"newuser\",\n\t\"email\": \"newuser@example.com\",\n\t\"password\": \"newuser1234\"\n}"
+					"raw": "{\n\t\"name\": \"amrut\",\n\t\"email\": \"amrut@example.com\",\n\t\"password\": \"amrut1234\"\n}"
 				},
 				"url": {
 					"raw": "{{url}}/user",
@@ -404,7 +404,7 @@
 			"response": []
 		},
 		{
-			"name": "Login",
+			"name": "Login User",
 			"event": [
 				{
 					"listen": "test",
@@ -444,6 +444,42 @@
 					"path": [
 						"users",
 						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users/logout",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout All User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users/logoutAll",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"logoutAll"
 					]
 				}
 			},
