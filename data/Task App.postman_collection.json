@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "b1732fc9-e6b3-48fd-b21a-0cc0a5dc8af8",
+		"_postman_id": "1459b818-7bdb-4494-8026-444129c68b14",
 		"name": "Task App",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -36,7 +36,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"adi\",\n\t\"email\": \"adi@example.com\",\n\t\"password\": \"adi1234\"\n}"
+					"raw": "{\n\t\"name\": \"amar\",\n\t\"email\": \"amar@example.com\",\n\t\"password\": \"amar1234\"\n}"
 				},
 				"url": {
 					"raw": "{{url}}/user",
@@ -408,7 +408,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"description\": \"Task 450\",\n\t\"completed\": true\n}"
+					"raw": "{\n\t\"description\": \"Fourth\",\n\t\"completed\": false\n}"
 				},
 				"url": {
 					"raw": "{{url}}/tasks",
@@ -442,12 +442,18 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{url}}/tasks",
+					"raw": "{{url}}/tasks?sortBy=createdAt:desc",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"tasks"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "createdAt:desc"
+						}
 					]
 				}
 			},
@@ -531,13 +537,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{url}}/tasks/5d14b747d4b67b4de445198d",
+					"raw": "{{url}}/tasks/5d14f25fd2aa0c23fcce334b",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"tasks",
-						"5d14b747d4b67b4de445198d"
+						"5d14f25fd2aa0c23fcce334b"
 					]
 				}
 			},
