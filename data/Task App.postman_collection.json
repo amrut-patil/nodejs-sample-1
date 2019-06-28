@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "1459b818-7bdb-4494-8026-444129c68b14",
+		"_postman_id": "2781329e-744c-40d5-b741-ffa76e4d4900",
 		"name": "Task App",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -36,7 +36,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"amar\",\n\t\"email\": \"amar@example.com\",\n\t\"password\": \"amar1234\"\n}"
+					"raw": "{\n\t\"name\": \"adi\",\n\t\"email\": \"adi@example.com\",\n\t\"password\": \"adi1234\"\n}"
 				},
 				"url": {
 					"raw": "{{url}}/user",
@@ -226,13 +226,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{url}}/users/5d1305317b1382299c1b8683",
+					"raw": "{{url}}/users/5d159571fd3a655de8bdd25f",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"users",
-						"5d1305317b1382299c1b8683"
+						"5d159571fd3a655de8bdd25f"
 					]
 				}
 			},
@@ -408,7 +408,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"description\": \"Fourth\",\n\t\"completed\": false\n}"
+					"raw": "{\n\t\"description\": \"fourth\",\n\t\"completed\": true\n}"
 				},
 				"url": {
 					"raw": "{{url}}/tasks",
@@ -442,7 +442,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{url}}/tasks?sortBy=createdAt:desc",
+					"raw": "{{url}}/tasks?sortBy=createdAt:des1c",
 					"host": [
 						"{{url}}"
 					],
@@ -452,7 +452,7 @@
 					"query": [
 						{
 							"key": "sortBy",
-							"value": "createdAt:desc"
+							"value": "createdAt:des1c"
 						}
 					]
 				}
@@ -544,6 +544,91 @@
 					"path": [
 						"tasks",
 						"5d14f25fd2aa0c23fcce334b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Avatar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": "/D:/Amrut/Dev/NodeJS/node-course-images/profile-pic.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/users/me/avatar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"me",
+						"avatar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "anything",
+							"type": "file",
+							"src": "/C:/Users/amrutp/Desktop/node-course-images/sample-pdf-file.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/upload",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Avatar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": "/D:/Amrut/Dev/NodeJS/node-course-images/sample-docx-file.docx"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/users/me/avatar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"me",
+						"avatar"
 					]
 				}
 			},
