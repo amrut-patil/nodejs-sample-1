@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "2781329e-744c-40d5-b741-ffa76e4d4900",
+		"_postman_id": "4eac8569-f160-4dd6-ae5b-6a58a00f28c0",
 		"name": "Task App",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -36,7 +36,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"adi\",\n\t\"email\": \"adi@example.com\",\n\t\"password\": \"adi1234\"\n}"
+					"raw": "{\n\t\"name\": \"Amrut\",\n\t\"email\": \"amrut.patil@rediff.com\",\n\t\"password\": \"amrut1234\"\n}"
 				},
 				"url": {
 					"raw": "{{url}}/user",
