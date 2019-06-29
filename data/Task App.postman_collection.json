@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "4eac8569-f160-4dd6-ae5b-6a58a00f28c0",
+		"_postman_id": "6a8cdcd1-08ae-4e88-a18d-03cc6d6bbae5",
 		"name": "Task App",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -36,15 +36,15 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\": \"Amrut\",\n\t\"email\": \"amrut.patil@rediff.com\",\n\t\"password\": \"amrut1234\"\n}"
+					"raw": "{\n\t\"name\": \"Durva\",\n\t\"email\": \"amrut.patil@rediff.com\",\n\t\"password\": \"durva1234\"\n}"
 				},
 				"url": {
-					"raw": "{{url}}/user",
+					"raw": "{{url}}/users",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"user"
+						"users"
 					]
 				}
 			},

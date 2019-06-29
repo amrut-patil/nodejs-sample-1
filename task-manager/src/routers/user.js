@@ -7,7 +7,7 @@ const { sendWelcomeEmail, sendCancelationfEmail } = require('../email/account');
 
 const router = new express.Router();
 
-router.post('/user', async (req, res) => {
+router.post('/users', async (req, res) => {
 
     const user = new User(req.body);
     try {
@@ -115,7 +115,7 @@ router.patch('/users/me', auth, async (req, res) => {
     const isValidOperation = updates.every((item) => allowedUpdates.includes(item));
 
     if (!isValidOperation) {
-        return res.status(404).send({ error: "Invalid updates" });
+        return res.status(400).send({ error: "Invalid updates" });
     }
 
     try {
