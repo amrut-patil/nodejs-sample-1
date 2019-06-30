@@ -9,7 +9,10 @@ http://links.mead.io/files
 http://links.mead.io/nodetest
 
 //Extra unit tests
-http://links.mead.io/extratests
+http://links.mead.io/extratests1
+
+//List to libraries used in chat application
+http://links.mead.io/chatlibs
 
 //Test regular expression
 regex101.com
